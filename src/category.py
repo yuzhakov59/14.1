@@ -13,3 +13,4 @@ class Category:
         self.products = products if products else []
         Category.categories_count += 1
         Category.products_count += len(products) if products else 0
+
