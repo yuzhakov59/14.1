@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "14"}]
+packages = [{include = "src"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
@@ -21,6 +21,9 @@ build-backend = "poetry.core.masonry.api"
 lint = [
     "flake8 (>=7.3.0,<8.0.0)",
     "mypy (>=1.19.1,<2.0.0)"
+]
+dev = [
+    "pytest-cov (>=7.0.0,<8.0.0)"
 ]
 
 [tool.mypy]
@@ -34,3 +37,9 @@ lines_after_imports = 2
 
 [tool.black]
 line-length = 119
+
+[flake8]
+max-line-length = 119
+
+[tool.flake8]
+max-line-length = 119

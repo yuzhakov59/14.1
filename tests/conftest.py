@@ -31,3 +31,8 @@ def ovo_category():
 @pytest.fixture
 def ovo_product():
     return Product('картошка', 'статус картошка', 35, 5)
+
+
+@pytest.fixture
+def product_add():
+    return
