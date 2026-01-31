@@ -22,3 +22,11 @@ def test_product_update(capsys, ovo_product):
     assert message.out.strip() == "Цена не должна быть нулевая или отрицательная"
     ovo_product.price = 800
     assert ovo_product.price == 800
+
+
+def test_new_product_valid_data(product_dict):
+    product = Product.new_product(product_dict)
+    assert product.name == 'кабачек'
+    assert product.description == 'статус кабачка'
+    assert product.price == 180
+    assert product.quantity == 2

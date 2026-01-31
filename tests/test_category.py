@@ -1,4 +1,3 @@
-
 def test_category_init(frukt_category, ovo_category):
     assert frukt_category.name == 'фрукты'
     assert frukt_category.description == 'сезонные фрукты'
@@ -19,3 +18,10 @@ def test_cat_prod_setter(frukt_category, ovo_product):
     assert len(frukt_category.prod_in_list) == 2
     frukt_category.products = ovo_product
     assert len(frukt_category.prod_in_list) == 3
+
+
+def test_add_product(ovo_product, ovo_category):
+    category = ovo_category
+    assert len(category.prod_in_list) == 2
+    category.add_product(ovo_product)
+    assert len(category.prod_in_list) == 3

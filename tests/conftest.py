@@ -34,5 +34,5 @@ def ovo_product():
 
 
 @pytest.fixture
-def product_add():
-    return
+def product_dict():
+    return {"name": "кабачек", "description": "статус кабачка", "price": 180, "quantity": 2}
