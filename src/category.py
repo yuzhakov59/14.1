@@ -14,6 +14,9 @@ class Category:
         Category.categories_count += 1
         Category.product_count += len(products) if products else 0
 
+    def __str__(self):
+        return f'{self.name}, количество продуктов: {Category.product_count} шт.'  #Название категории, количество продуктов: 200 шт.
+
     def add_product(self, product):
         """Добавляет продукт в категорию"""
         if isinstance(product, Product):
@@ -31,4 +34,4 @@ class Category:
     @products.setter
     def products(self, products: Product):
         self.__products.append(products)
-        Category.products_count += 1
+        Category.product_count += 1
