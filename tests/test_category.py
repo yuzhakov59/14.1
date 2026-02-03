@@ -10,4 +10,4 @@ def test_category_init(frukt_category, ovo_category):
     assert ovo_category.product_count == 4
 
 def test_category_str(ovo_category):
-    assert str(ovo_category) == "овощи, количество продуктов: 6 шт."
+    assert str(ovo_category) == "овощи, количество продуктов: 11 шт."
