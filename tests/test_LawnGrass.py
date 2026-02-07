@@ -7,6 +7,7 @@ def test_LawnGrass_init(grass1):
     assert grass1.germination_period == "7 дней"
     assert grass1.color == "Зеленый"
 
+
 def test_LawnGrass_sum(grass1, grass2):
     grass_sum = grass1 + grass2
     assert grass_sum == 950.0
