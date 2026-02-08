@@ -25,8 +25,12 @@ build-backend = "poetry.core.masonry.api"
 4. считает количество категорий и количество продуктов.
 5. class Product принимает имя продукта, статус, цену продукта, количество штук.
 6. Product приватный доступ к __price
+7. LawnGrass инициализация класса
+8. Smartphone инициализация класса
 7. тесты на class Category
 8. тесты на class Product
+9. тесты на class Smartphone
+10.тесты на class LawnGrass
 
 ## Документация:
 
