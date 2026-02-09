@@ -27,6 +27,8 @@ build-backend = "poetry.core.masonry.api"
 6. Product приватный доступ к __price
 7. LawnGrass инициализация класса
 8. Smartphone инициализация класса
+9. BaseProduct - Базовый абстрактный класс
+10. PrintMixin класс формирующий информацию о сущности в определенной форме
 7. тесты на class Category
 8. тесты на class Product
 9. тесты на class Smartphone
