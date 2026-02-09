@@ -8,4 +8,5 @@ def test_product_str(ovo_product):
     assert str(ovo_product) == "картошка, 35 руб. Остаток: 5 шт."
 
 def test_product_add(ovo_product, app_product):
-    assert ovo_product + app_product == 35 * 5 + 55 * 5
+    sum_prod = ovo_product + app_product
+    assert sum_prod == 450
