@@ -9,6 +9,6 @@ class LawnGrass(Product):
         self.color = color
 
     def __add__(self, other):
-        if not isinstance(other, Product):
-            raise ValueError('TypeError')
+        if not isinstance(other, self.__class__):
+            raise TypeError
         return self.price + other.price
