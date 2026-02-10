@@ -32,3 +32,7 @@ def test_dict_new_product():
     assert new_prod.description == "256GB, Серый цвет, 200MP камера"
     assert new_prod.price == 180000.0
     assert new_prod.quantity == 5
+
+def test_product_init_value_error():
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
+        product = Product('картошка', 'статус картошка', 35, 0)

@@ -29,10 +29,13 @@ build-backend = "poetry.core.masonry.api"
 8. Smartphone инициализация класса
 9. BaseProduct - Базовый абстрактный класс
 10. PrintMixin класс формирующий информацию о сущности в определенной форме
-7. тесты на class Category
-8. тесты на class Product
-9. тесты на class Smartphone
-10.тесты на class LawnGrass
+11. Добавлена проверка инициализации продукта с отслеживанием количества >= 1
+12. middle_price метод средней цены продуктов с проверкой ZeroDivisionError
+13. тесты на class Category
+14. тесты на class Product
+15. тесты на class Smartphone
+16. тесты на class LawnGrass
+
 
 ## Документация:
 
